@@ -77,7 +77,7 @@ function loadInvoices() {
         data.invoices.forEach(i => {
             tbody.append(`<tr>
                 <td>${i.id}</td>
-                <td>${i.customer_name}</td>
+                <td>${i.customer?.name ?? ''}</td>
                 <td>${i.date}</td>
                 <td>${i.amount}</td>
                 <td>${i.status}</td>
